@@ -3,24 +3,14 @@ import {
   Box,
   Container,
   Stack,
-  SimpleGrid,
   Text,
-  Link,
   VisuallyHidden,
   chakra,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { FaTwitter, FaYoutube, FaInstagram, FaGithub } from 'react-icons/fa';
-import { time } from 'console';
+import { FaInstagram, FaGithub } from 'react-icons/fa';
 
 
-const ListHeader = ({ children }: { children: ReactNode }) => {
-  return (
-    <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
-      {children}
-    </Text>
-  );
-};
 
 const SocialButton = ({
   children,
@@ -98,7 +88,7 @@ export default function LargeWithAppLinksAndSocial() {
           spacing={4}
           justify={{ md: 'space-between' }}
           align={{ md: 'center' }}>
-          <Text>© { new Date(). getFullYear()} Roku. All rights reserved</Text>
+          <Text>© { new Date().getFullYear()} Roku. All rights reserved</Text>
           <Stack direction={'row'} spacing={6}>
     
             <SocialButton label={'Github'} href={'https://github.com/jaspherb'}>

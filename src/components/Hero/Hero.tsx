@@ -12,23 +12,15 @@ import {
   Flex,
   Editable,
   EditablePreview,
-  IconButton,
   useClipboard,
   Highlight,
   Card,
   CardBody,
-  CardHeader,
   StackDivider,
   useToast,
-  Button,
-  Divider,
-  ButtonGroup,
-  CardFooter
-} from '@chakra-ui/react';
+  Button} from '@chakra-ui/react';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { CopyIcon } from '@chakra-ui/icons';
-import { title } from 'process';
 
 type FormValues = {
   inputText: string;
@@ -37,15 +29,13 @@ type FormValues = {
 
 export default function Hero() {
   const {
-    register,
-    formState: { errors }
-  } = useForm<FormValues>({});
+    register  } = useForm<FormValues>({});
 
   const [input, setInput] = useState<string>();
 
   const toast = useToast();
 
-  const { onCopy, value, setValue, hasCopied } = useClipboard('');
+  const { onCopy, setValue, hasCopied } = useClipboard('');
 
   return (
     <>
