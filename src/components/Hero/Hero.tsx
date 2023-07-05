@@ -73,10 +73,10 @@ export default function Hero() {
 
           <Text>
             <Highlight
-              query="spaces"
+              query="space"
               styles={{ px: '2', py: '1', rounded: 'full', bg: 'green.100' }}
             >
-              separate your words with spaces 
+              separate your words with space and 
               as you type it will be replaced
               by 🤸‍♀️
             </Highlight>
