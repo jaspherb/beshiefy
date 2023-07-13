@@ -63,7 +63,7 @@ export default function Hero() {
 
           <Text>
             <Highlight
-              query="space"
+              query={['space','🤸‍♀️']}
               styles={{ px: '2', py: '1', rounded: 'full', bg: 'green.100' }}
             >
               separate your words with space and 
